@@ -1,0 +1,67 @@
+/* Copyright Statement:
+ *
+ * This software/firmware and related documentation ("MediaTek Software") are
+ * protected under relevant copyright laws. The information contained herein
+ * is confidential and proprietary to MediaTek Inc. and/or its licensors.
+ * Without the prior written permission of MediaTek inc. and/or its licensors,
+ * any reproduction, modification, use or disclosure of MediaTek Software,
+ * and information contained herein, in whole or in part, shall be strictly prohibited.
+ */
+/* MediaTek Inc. (C) 2010. All rights reserved.
+ *
+ * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+ * THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+ * RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO RECEIVER ON
+ * AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+ * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+ * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+ * SUPPLIED WITH THE MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+ * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+ * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+ * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+ * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+ * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+ * CUMULATIVE LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+ * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+ * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+ * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+ *
+ * The following software/firmware and/or related documentation ("MediaTek Software")
+ * have been modified by MediaTek Inc. All revisions are subject to any receiver's
+ * applicable license agreements with MediaTek Inc.
+ */
+
+#ifndef __TPD_CUSTOM_MSG2133_H__
+#define __TPD_CUSTOM_MSG2133_H__
+
+/* Pre-defined definition */
+#define TPD_TYPE_CAPACITIVE
+#define TPD_I2C_NUMBER           1
+
+//#define TOUCH_ADDR_MSG20XX 0Xc0
+#define TPD_DELAY                (2*HZ/100)
+#define MAX_TOUCH_FINGER     5
+#define MS_TS_MSG21XX_X_MAX  480
+#define MS_TS_MSG21XX_Y_MAX   854//800
+#define REPORT_PACKET_LENGTH   8//2--8--128--80
+
+
+		#define TPD_RES_X                480
+		#define TPD_RES_Y                854//800
+		#define CHIP_HAVE_NO_MOSFET		//reset pin use
+		#define TPD_HAVE_BUTTON
+		#define HAVE_TOUCH_KEY
+		#define TPD_BUTTON_HEIGHT       100
+		
+		#define TPD_KEY_COUNT           3
+		#define TPD_KEYS                {KEY_MENU,KEY_HOMEPAGE, KEY_BACK}
+		#define TPD_KEYS_DIM        {{70,880,10,10},{310,880,10,10},{430,880,10,10}}
+
+		/*
+		#define TPD_KEY_COUNT           4
+		#define TPD_KEYS                {KEY_MENU, KEY_HOME, KEY_BACK, KEY_SEARCH}
+		#define TPD_KEYS_DIM        {{70,860,60,100},{190,860,60,100},{310,860,60,100},{430,860,60,100}}
+		*/
+#endif /* TOUCHPANEL_H__ */
